@@ -25,9 +25,6 @@
     // 5. convert to DRY code
 
 function reverse(str) {
-  let ans = str.split('')
-  ans.reverse()
-  ans = ans.join('')
-  return ans
+  return str.split('').reverse().join('')
 }
 module.exports = reverse;
