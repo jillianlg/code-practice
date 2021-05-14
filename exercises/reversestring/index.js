@@ -23,8 +23,9 @@
     // 4. return the reversed string
         // step 4   return ans
     // 5. convert to DRY code
+    // 6. convert to DRY code using the spread syntax
 
 function reverse(str) {
-  return str.split('').reverse().join('')
+  return [...str].reverse().join('')
 }
 module.exports = reverse;
