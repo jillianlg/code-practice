@@ -25,7 +25,16 @@
     // 5. convert to DRY code
     // 6. convert to DRY code using the spread syntax
 
+// function reverse(str) {
+//   return [...str].reverse().join('')
+// }
+// module.exports = reverse;
+
+// VERSION 2 with CONDITIONS:
+    // Are there any conditions for the string that will be passed? Yes - can not use .reverse()
+    // Will the string contain regular or special characters? No
+
 function reverse(str) {
-  return [...str].reverse().join('')
+
 }
 module.exports = reverse;
