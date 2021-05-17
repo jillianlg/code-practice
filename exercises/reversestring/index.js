@@ -68,6 +68,9 @@
         // step 4   return str.spilt('')
 
 function reverse(str) {
-
+  return str.split('') //step 1  //step 4
+    .reduce((reversed, char) => { //step 2
+      return char + reversed; //step 3
+    }, '');
 }
 module.exports = reverse;
