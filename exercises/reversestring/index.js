@@ -34,7 +34,21 @@
     // Are there any conditions for the string that will be passed? Yes - can not use .reverse()
     // Will the string contain regular or special characters? No
 
-function reverse(str) {
+// Break down the steps:
+    // 1. create a variable to serve as the return value and set it as an empty string, call it reversed.
+      // step 1   let reversed = ''
+    // 2. loop through the characters in the input string
+      // step 2   for(let char of string) { }
+    //3.  Within each loop iteration, add the character to the beginning of the reversed string
+      // step 3   reversed = char + reversed;
+    // 4. return reversed
+      // step 4   return reversed;
 
+function reverse(str) {
+  let reversed = '' //step 1
+  for(let char of str) { //step 2
+    reversed = char + reversed; //step 3
+  }
+  return reversed; //step 4
 }
 module.exports = reverse;
