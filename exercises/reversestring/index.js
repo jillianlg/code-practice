@@ -23,10 +23,11 @@
     // 4. return the reversed string
         // step 4   return ans
     // 5. convert to DRY code
+        // return str.split('').reverse().join('');
     // 6. convert to DRY code using the spread syntax
 
 // function reverse(str) {
-//   return [...str].reverse().join('')
+//   return [...str].reverse().join('');
 // }
 // module.exports = reverse;
 
@@ -44,11 +45,29 @@
     // 4. return reversed
       // step 4   return reversed;
 
+// function reverse(str) {
+//   let reversed = '' //step 1
+//   for(let char of str) { //step 2
+//     reversed = char + reversed; //step 3
+//   }
+//   return reversed; //step 4
+// }
+// module.exports = reverse;
+
+// VERSION 3 with CONDITIONS:
+// Break down the steps:
+    // 1. convert the string into an array with each character in the string as an element
+        // step 1   str.split(' ') 
+    // 2. use .reduce() to condense the items in the array to one single string value
+        // reduce take two arguments: ((1, 2) => {}, and an empty string '')
+        // step 2   .reduce((reversed, char) => {     
+        //          }, '');
+    // 3. return character and the reversed string
+        // step 3   return char + reversed;
+    // 4. return the result - add return to step 1
+        // step 4   return str.spilt('')
+
 function reverse(str) {
-  let reversed = '' //step 1
-  for(let char of str) { //step 2
-    reversed = char + reversed; //step 3
-  }
-  return reversed; //step 4
+
 }
 module.exports = reverse;
