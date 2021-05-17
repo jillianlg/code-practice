@@ -31,6 +31,8 @@
 // }
 // module.exports = reverse;
 
+//////////////////////////////////////////////////////////////
+
 // VERSION 2 with CONDITIONS - can not use .reverse():
   // Break down the steps:
       // 1. create a variable to serve as the return value and set it as an empty string, call it reversed.
@@ -50,6 +52,8 @@
 //   return reversed; //step 4
 // }
 // module.exports = reverse;
+
+//////////////////////////////////////////////////////////////
 
 // VERSION 3 with CONDITIONS - can not use .reverse():
   // Break down the steps:
